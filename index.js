@@ -39,7 +39,7 @@ cron.schedule("0 22 * * *", () => {
 });
 
 // Schedule cron job for July 22, 2023, at 9:00 PM
-cron.schedule("0 21 22 7 * 2023", () => {
+cron.schedule("0 21 22 7 *", () => {
     console.log("Running cron job on July 22, 2023, at 9 PM");
 });
 
@@ -57,4 +57,5 @@ cron.schedule("0 8 */3 * *", () => {
 cron.schedule("0 8 * * *", () => {
     console.log("Running cron job on every 8Am");
 });
+
 app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
